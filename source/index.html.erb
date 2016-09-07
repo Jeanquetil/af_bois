@@ -1,10 +1,107 @@
 ---
-title: Le Wagon Middleman boilerplate
+title: AF BOIS
 ---
 
-<div class="welcome text-center padded">
-  <h1>Welcome to Middleman</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p>
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(255, 196, 146, 0.3) 20%, rgba(36, 43, 47, 0.4) 70%), url('https://unsplash.it/1440/900?image=307');">
+  <div class="banner-content">
+    <h1>A.F. Bois</h1>
+    <p>une approche globale + la vision + l'opérationnel</p>
+    <p>Plus de 30 années d’expérience au service du bois, dont plus de 20 en tant que consultant indépendant.</p>
+  </div>
+</div>
+
+<div class="wrapper light-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-8 justified">
+        <h2><span class="underlined-gray">A propos</span></h2>
+        <h3>Un arbre pour décrire une activité professionnelle …</h3>
+        <p>L'<strong>image de l'arbre</strong> est utilisée depuis longtemps pour représenter le <strong>fonctionnement du vivant</strong> : arbre généalogique, arbre de l'éternité, arbre de vie, …</p>
+        <p>Il y a de cela dans les technologies et les entreprises, qui évoluent et se transforment continuellement. Comme un arbre, elles doivent être nourries (les racines), avoir une certaine permanence (le tronc), et s’adapter au contexte (le houppier).</p>
+        <p>L’arbre est une façon - comme une autre - de décrire simplement toute entreprise :
+          <ul>
+            <li>Les <strong>racines</strong> sont le lieu du savoir, de la connaissance des bonnes pratiques : elles nourrissent le tronc et les branches.</li>
+            <li>Le <strong>tronc</strong> - par sa robustesse et sa rectitude relative - représente la structure et les équipements permanents de production : il croît en diamètre chaque année, selon le milieu ambiant.</li>
+            <li>Les <strong>branches</strong> représentent les marchés et les produits finis : elles peuvent tomber, végéter tel un broussin, ou former un magnifique houppier.</li>
+          </ul>
+        </p>
+        <p>L’<strong>arbre A.f BOIS</strong> croît doucement depuis plus de 20 ans, le <strong>bois-matériau</strong> étant, depuis toujours, le fil conducteur de mon activité.</p>
+        <p>Frédéric Anquetil</p>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <%= image_tag "http://placehold.it/350x500" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper green color-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2><span class="underlined-white">Brindilles</span></h2>
+        <div class="col-xs-12 col-md-6 text-center">
+          <%= image_tag "http://placehold.it/400x275", class:"padded" %>
+        </div>
+        <div class="col-xs-12 col-md-6 text-center">
+          <%= image_tag "http://placehold.it/400x275", class:"padded" %>
+        </div>
+        <div class="col-xs-12 col-md-6 text-center">
+          <%= image_tag "http://placehold.it/400x275", class:"padded" %>
+        </div>
+        <div class="col-xs-12 col-md-6 text-center">
+          <%= image_tag "http://placehold.it/400x275", class:"padded" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+      <h2><span class="underlined-gray">Clients</span></h2>
+        <% data.customers.each do |customer, infos| %>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path infos.picture %>);">
+              <div class="card-description">
+                <h3><%= infos.name %></h3>
+                <p><%= infos.description %></p>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="wrapper light-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2><span class="underlined-gray">Contact</span></h2>
+        <div class="col-xs-12 col-md-4">
+          <div class="contact-card">
+            <p><i class="fa fa-envelope fa-2x" aria-hidden="true"></i><br>A.F. Bois - Frédéric Anquetil<br>29 Rue des Meuniers<br> 94300 Vincennes - France</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="contact-card">
+            <p><i class="fa fa-mobile vertical-align-middle" aria-hidden="true"></i> 06.81.81.97.98<br><i class="fa fa-phone vertical-align-middle" aria-hidden="true"></i> 01.48.08.29.68<br><i class="fa fa-envelope vertical-align-middle" aria-hidden="true"></i> anquetilf@wanadoo.fr</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="contact-card">
+            <p>Siret : 379 658 792 00021<br>TVA intracom : FR60379658792<br>Urssaf : 452058431<br>N° formateur : 1194028079</p>
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <p class="legend">A.f BOIS s’engage à préserver la confidentialité des travaux, par contrat si nécessaire. En cas de risque de conflit d’intérêts vis-à-vis de ses clients « historiques », A.f  BOIS se donne le droit de ne pas faire suite à certaines offres de mission. En fonction des missions, A.f  BOIS s’entoure d’experts, et en informe au préalable ses clients.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
