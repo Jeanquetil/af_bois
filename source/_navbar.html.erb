@@ -8,17 +8,17 @@
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
     <!-- Text link -->
-    <a class="navbar-wagon-item navbar-wagon-link sliding-middle-out" id="home">Accueil</a>
+    <a href="/" class="navbar-wagon-item navbar-wagon-link sliding-middle-out" id="home">Accueil</a>
 
     <!-- Profile picture and dropdown -->
     <div class="dropdown">
       <button class="dropbtn">Prestations</button>
       <div class="dropdown-content">
-        <a href="#">Production</a>
-        <a href="#">Développement</a>
-        <a href="#">Mix-Marketing</a>
-        <a href="#">Communication</a>
-        <a href="#">Etudes</a>
+        <%= link_to "Production", "production.html" %>
+        <%= link_to "Développement", "developpement.html" %>
+        <%= link_to "Mix-Marketing", "mix-marketing.html" %>
+        <%= link_to "Communication", "communication.html" %>
+        <%= link_to "Etudes", "etudes.html" %>
       </div>
     </div>
 

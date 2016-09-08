@@ -28,10 +28,37 @@ title: AF BOIS
         <p>L’<strong>arbre A.f BOIS</strong> croît doucement depuis plus de 20 ans, le <strong>bois-matériau</strong> étant, depuis toujours, le fil conducteur de mon activité.</p>
         <p>Frédéric Anquetil</p>
       </div>
-      <div class="col-xs-12 col-md-4">
+      <div class="col-xs-12 col-md-4 text-center">
         <a href="../images/arbre_xxl.jpg" class="swipebox" title="Un arbre pour décrire une activité professionnelle">
           <img src="../images/arbre_s.png" alt="image" id="arbre">
         </a>
+      </div>
+      <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <div class="slider">
+          <div class="slide_viewer">
+            <div class="slide_group">
+              <div class="slide">
+                <i class="fa fa-quote-right fa-2x" aria-hidden="true"></i>
+                <p>« L’homme est le plus petit roseau, mais un roseau pensant. »<br><strong>Pascal</strong></p>
+              </div>
+              <div class="slide">
+                <i class="fa fa-quote-right fa-2x" aria-hidden="true"></i>
+                <p>" L'arbre tombe toujours du côté où il penche "<br><strong>Proverbe Français</strong></p>
+              </div>
+              <div class="slide">
+                <i class="fa fa-quote-right fa-2x" aria-hidden="true"></i>
+                <p>" La patience est un arbre dont la racine est amère, et dont les fruits sont très doux. "<br><strong>Proverbe Persan</strong></p>
+              </div>
+              <div class="slide">
+                <i class="fa fa-quote-right fa-2x" aria-hidden="true"></i>
+                <p>" ...le vent ne parle pas plus doucement au chêne géant qu'au plus infime des brins d'herbe... "<br><strong>Khalil Gibran</strong></p>
+              </div>
+            </div>
+          </div>
+        </div><!-- End // .slider -->
+
+        <div class="slide_buttons">
+        </div>
       </div>
     </div>
   </div>
@@ -104,39 +131,125 @@ title: AF BOIS
 </div>
 
 <script type="text/javascript">
-;( function( $ ) {
+$( document ).ready(function() {
+  ;( function( $ ) {
 
-  $( '.swipebox' ).swipebox();
+    $( '.swipebox' ).swipebox();
 
-} )( jQuery );
+  } )( jQuery );
 
-$("#home").click(function() {
-    $('html,body').animate({
-        scrollTop: 0},
-        'slow');
-});
+  $("#about-click").click(function() {
+      $('html,body').animate({
+          scrollTop: $("#about").offset().top - 175},
+          'slow');
+  });
 
-$("#about-click").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#about").offset().top - 175},
-        'slow');
-});
+  $("#work-click").click(function() {
+      $('html,body').animate({
+          scrollTop: $("#work").offset().top - 80},
+          'slow');
+  });
 
-$("#work-click").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#work").offset().top - 80},
-        'slow');
-});
+  $("#customers-click").click(function() {
+      $('html,body').animate({
+          scrollTop: $("#customers").offset().top - 80},
+          'slow');
+  });
 
-$("#customers-click").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#customers").offset().top - 80},
-        'slow');
-});
+  $("#contact-click").click(function() {
+      $('html,body').animate({
+          scrollTop: $("#contact").offset().top - 80},
+          'slow');
+  });
 
-$("#contact-click").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#contact").offset().top - 80},
-        'slow');
+  $('.slider').each(function() {
+    var $this = $(this);
+    var $group = $this.find('.slide_group');
+    var $slides = $this.find('.slide');
+    var bulletArray = [];
+    var currentIndex = 0;
+    var timeout;
+
+    function move(newIndex) {
+      var animateLeft, slideLeft;
+
+      advance();
+
+      if ($group.is(':animated') || currentIndex === newIndex) {
+        return;
+      }
+
+      bulletArray[currentIndex].removeClass('active');
+      bulletArray[newIndex].addClass('active');
+
+      if (newIndex > currentIndex) {
+        slideLeft = '100%';
+        animateLeft = '-100%';
+      } else {
+        slideLeft = '-100%';
+        animateLeft = '100%';
+      }
+
+      $slides.eq(newIndex).css({
+        display: 'block',
+        left: slideLeft
+      });
+      $group.animate({
+        left: animateLeft
+      }, function() {
+        $slides.eq(currentIndex).css({
+          display: 'none'
+        });
+        $slides.eq(newIndex).css({
+          left: 0
+        });
+        $group.css({
+          left: 0
+        });
+        currentIndex = newIndex;
+      });
+    }
+
+    function advance() {
+      clearTimeout(timeout);
+      timeout = setTimeout(function() {
+        if (currentIndex < ($slides.length - 1)) {
+          move(currentIndex + 1);
+        } else {
+          move(0);
+        }
+      }, 4000);
+    }
+
+    $('.next_btn').on('click', function() {
+      if (currentIndex < ($slides.length - 1)) {
+        move(currentIndex + 1);
+      } else {
+        move(0);
+      }
+    });
+
+    $('.previous_btn').on('click', function() {
+      if (currentIndex !== 0) {
+        move(currentIndex - 1);
+      } else {
+        move(3);
+      }
+    });
+
+    $.each($slides, function(index) {
+      var $button = $('<a class="slide_btn">&bull;</a>');
+
+      if (index === currentIndex) {
+        $button.addClass('active');
+      }
+      $button.on('click', function() {
+        move(index);
+      }).appendTo('.slide_buttons');
+      bulletArray.push($button);
+    });
+
+    advance();
+  });
 });
 </script>
