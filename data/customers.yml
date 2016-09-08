@@ -1,24 +1,36 @@
-fcba:
-  name: FCBA
-  picture: http://placehold.it/300x200
-  description: Stratégie de développement de filière
 mobilewood:
   name: MobileWood
-  picture: http://placehold.it/300x200
+  picture: mobilwood.png
   description: Stratégie de développement de filière
-belm:
-  name: Bel'M
-  picture: http://placehold.it/300x200
-  description: Stratégie de développement de filière
-cid:
-  name: CID
-  picture: http://placehold.it/300x200
+fcba:
+  name: FCBA
+  picture: fcba.jpg
   description: Stratégie de développement de filière
 terea:
   name: Terea
-  picture: http://placehold.it/300x200
+  picture: terea.jpg
+  description: Stratégie de développement de filière
+belm:
+  name: Bel'M
+  picture: belm.png
+  description: Stratégie de développement de filière
+atibt:
+  name: Atibt
+  picture: atibt.jpg
+  description: Stratégie de développement de filière
+proboporte:
+  name: proboporte
+  picture: proboporte.png
+  description: Stratégie de développement de filière
+zilten:
+  name: Zilten
+  picture: zilten.jpg
+  description: Stratégie de développement de filière
+cid:
+  name: CID
+  picture: cid.jpg
   description: Stratégie de développement de filière
 unifa:
   name: Unifa
-  picture: http://placehold.it/300x200
+  picture: unifa.jpg
   description: Stratégie de développement de filière
