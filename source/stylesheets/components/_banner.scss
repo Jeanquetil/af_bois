@@ -1,23 +1,23 @@
 .banner {
   color: white;
   text-align: center;
-  height: 100vh;
+  height: calc(40vh - 70px);
   background-size: cover !important;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .banner h1 {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: bold;
   letter-spacing: 2px;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
 }
 .banner p {
-  font-size: 20px;
+  font-size: 1.2vw;
   font-weight: lighter;
   color: white;
-  margin-bottom: 20px;
   letter-spacing:3px;
   font-weight:lighter;
   font-family: 'Raleway', Sans-serif;
@@ -25,4 +25,5 @@
 
 .banner h3 {
   letter-spacing: 2px;
+  font-size: 20px;
 }

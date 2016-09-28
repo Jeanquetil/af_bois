@@ -1,0 +1,23 @@
+.works img {
+  width: 400px;
+  box-shadow: 0 2px 40px rgba(94,255,168,0.5);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  &:hover {
+    opacity: 0.8;
+    box-shadow: 0 5px 100px rgba(94,255,168,0.5);
+  }
+}
+
+.modal {
+  color: $gray;
+}
+
+.modal-header {
+  letter-spacing: 2px;
+}
+
+.modal-content {
+  border-radius: 5px;
+}

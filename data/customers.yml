@@ -30,7 +30,19 @@ cid:
   name: CID
   picture: cid.jpg
   description: Stratégie de développement de filière
-unifa:
-  name: Unifa
-  picture: unifa.jpg
+ameublement:
+  name: l'Ameublement français
+  picture: ameublement.png
+  description: Stratégie de développement de filière
+Prourba:
+  name: Pro Urba
+  picture: prourba.png
+  description: Stratégie de développement de filière
+expertise:
+  name: Expertise France
+  picture: expertise.png
+  description: Stratégie de développement de filière
+univers:
+  name: Univers & Conseils
+  picture: univers.jpg
   description: Stratégie de développement de filière

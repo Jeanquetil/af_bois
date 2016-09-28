@@ -1,0 +1,16 @@
+agencement:
+  name: Les marchés de l'agencement en France
+  picture: agencement.png
+  pdf: agencement.pdf
+developpement:
+  name: Le développement durable et l'ecocertification du bois
+  picture: developpement.png
+  pdf: developpement.pdf
+multicriteres:
+  name: Quelle place pour les signes de confiance sur l'origine du bois dans les déclaration environnementales multicritères ?
+  picture: multicriteres.png
+  pdf: multicriteres.pdf
+cuisines:
+  name: Prospective cuisines 2030
+  picture: cuisines.png
+  pdf: cuisines.pdf
