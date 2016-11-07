@@ -1,7 +1,8 @@
 .card-3d {
-  background-color: #d9f7e2;
+  border: dashed #D7E2DB;
+  border-radius: 5px;
   text-align: center;
-  box-shadow: 4px 4px #f2dede;
+  padding: 0 30px;
 }
 
 .card-3d h4 {
@@ -12,7 +13,7 @@
 }
 
 .shadow-inset {
-  box-shadow: 0px -12px #d9f7e2 inset;
+  box-shadow: 0px -10px #e0ece4 inset;
 }
 
 .shadow-inset-pink {
@@ -20,29 +21,29 @@
 }
 
 .card-3d ul li {
-  padding:20px 20px 20px 20px;
+  padding: 10px 0;
 }
 
 .card-3d ul li:first-child {
-  padding-top: 35px;
+  padding-top: 20px;
 }
 
 .card-3d ul li:last-child {
-  padding-bottom:50px;
+  padding-bottom:20px;
 }
 
 .card-3d .pastille {
-  background-color: #f7f9f9;
+  background-color: #e0ece4;
   width: 50px;
   height: 50px;
   position: absolute;
   border-radius: 50px;
-  top: -15px;
+  top: -25px;
   padding-top: 10px;
-  left: -10px;
+  right: -8px;
   letter-spacing: 1px;
   font-size: 18px;
   font-weight: bolder;
-  border: 3px dashed #777777;
+  border: 3px solid #e0ece4;
   color: #777777;
 }

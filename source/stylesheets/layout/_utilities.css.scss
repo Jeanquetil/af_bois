@@ -59,12 +59,32 @@ h2 {
   margin-top: 10px;
   margin-bottom: 10px;
   letter-spacing: 2px;
-  font-weight: 300;
+  font-weight: bold;
 }
 
 h3 {
   letter-spacing: 1px;
   font-weight: 300;
+}
+
+h4 {
+  margin-top: 0px;
+}
+
+p {
+  line-height: 1;
+}
+
+.margin-top-25 {
+  margin-top: 25px;
+}
+
+.text-shadow-gray {
+  text-shadow: 4px 4px 0 #777777;
+}
+
+.text-shadow-pink {
+  text-shadow: 4px 4px 0 #f2dede;
 }
 
 .height {
@@ -75,4 +95,17 @@ h3 {
   width:50px;
   height: 2px;
   margin-bottom: 10px;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.vertical-center {
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+  justify-content: center;
 }

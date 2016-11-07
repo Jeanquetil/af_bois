@@ -1,11 +1,12 @@
 #arbre {
   width:400px;
-  &:hover {
-    opacity:0.8;
-  }
 }
 
 .customer {
   height:120px;
   padding: 20px;
+}
+
+#about p {
+  line-height: 1.4;
 }
