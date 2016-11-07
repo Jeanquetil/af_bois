@@ -6,7 +6,7 @@ gem 'middleman', '~> 3.4'
 gem 'middleman-deploy', '~> 1.0'
 
 # Deploy to Heroku
-gem 'rack-contrib'
+gem 'rake', '~> 10.1'
 
 gem 'puma'
 
