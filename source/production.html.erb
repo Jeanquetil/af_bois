@@ -4,52 +4,76 @@ title: A.f Bois - Production
 
 <div class="height"></div>
 
-<div class="wrapper linear-gray prestations">
+<div class="wrapper prestations">
   <div class="container">
-    <h2 class="text-center text-shadow-pink">Production</h2>
-    <div class="row margin-top-25">
-      <div class="flexbox vertical-center">
-        <div class="col-xs-12 col-md-7">
-          <h4><span class="shadow-inset">Conseil</span></h4>
-          <ul class="list-unstyled">
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Rendement matières/valeur, calcul des coûts de revient</p></li>
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Implantation d'atelier de transformation du bois</p></li>
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Marquage CE, certification NF, écocertification</p></li>
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Gestion des flux de production et de la charge d'atelier, indicateurs</p></li>
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Cahier des charges d'acquisition d'équipement</p></li>
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Audit de la fonction usinage-outillage</p></li>
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Amélioration des process de débit, collage, finition</p></li>
-          </ul>
-          <h4><span class="shadow-inset">Formation</span></h4>
-          <ul class="list-unstyled">
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Connaissance technique du bois et de ses dérivés</p></li>
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Gestion de production "poussé-tiré"</p></li>
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Manager une équipe de production</p></li>
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Les outils de la démarche qualité</p></li>
-          </ul>
-        </div>
-        <div class="col-xs-12 col-md-5">
-          <div class="card-3d">
-            <div class="pastille">3D</div>
-            <h4><span class="shadow-inset-pink">Démarche de Développement Durable</span></h4>
-            <ul class="list-unstyled">
-              <li><i class="fa fa-check" aria-hidden="true"></i> Mise en place de l'écocertification de fabrications à base de bois</li>
-              <li><i class="fa fa-check" aria-hidden="true"></i> Audit "blanc" de chaîne de contrôle d'approvisionnement de bois écocertifiés</li>
-              <li><i class="fa fa-check" aria-hidden="true"></i> Dossier ICPE soumise à déclaration</li>
-            </ul>
+    <h2 class="text-center"><span class="shadow-inset-pink">Production</span></h2>
+    <div class="row">
+
+      <div class="col-xs-12 col-md-9 col-md-offset-2">
+        <div class="flexbox space-around vertical-center margin-30">
+          <%= image_tag "search.png", class:"icon-presta" %>
+          <div class="content">
+            <h4><span class="shadow-inset">Conseil</span></h4>
+            <p>Rendement matières/valeur, calcul des coûts de revient</p>
+            <p>Implantation d'atelier de transformation du bois</p>
+            <p>Marquage CE, certification NF, écocertification</p>
+            <p>Gestion des flux de production et de la charge d'atelier, indicateurs</p>
+            <p>Cahier des charges d'acquisition d'équipement</p>
+            <p>Audit de la fonction usinage-outillage</p>
+            <p>Amélioration des process de débit, collage, finition</p>
           </div>
         </div>
       </div>
-      <div class="text-center margin-top-25">
-        <%= image_tag "prod1.jpg", class:"img-presta" %>
-        <%= image_tag "prod2.jpg", class:"img-presta" %>
-        <%= image_tag "prod3.jpg", class:"img-presta" %>
-        <%= image_tag "prod4.jpg", class:"img-presta" %>
+
+      <div class="col-xs-12 col-md-9 col-md-offset-1">
+        <div class="flexbox space-around vertical-center margin-30">
+          <div class="content">
+            <h4><span class="shadow-inset">Formation</span></h4>
+            <p>Connaissance technique du bois et de ses dérivés</p>
+            <p>Gestion de production "poussé-tiré"</p>
+            <p>Manager une équipe de production</p>
+            <p>Les outils de la démarche qualité</p>
+          </div>
+          <%= image_tag "worker.png", class:"icon-presta" %>
+        </div>
       </div>
-      <div class="text-center">
-        <% link_to "/", class: "btn button" do %>
-          <i class="fa fa-home" aria-hidden="true"></i> Retour à l'accueil
-        <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper light-gray">
+  <div class="container">
+    <div class="row">
+      <!-- 3D SECTION -->
+      <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <div class="card-3d margin-top-25">
+          <%= image_tag "earth.png", class:"pastille" %>
+          <h4><span class="shadow-inset-pink">Démarche de Développement Durable</span></h4>
+          <p><i class="fa fa-check" aria-hidden="true"></i> Mise en place de l'écocertification de fabrications à base de bois</p>
+          <p><i class="fa fa-check" aria-hidden="true"></i> Audit "blanc" de chaîne de contrôle d'approvisionnement de bois écocertifiés</p>
+          <p><i class="fa fa-check" aria-hidden="true"></i> Dossier ICPE soumise à déclaration</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <!-- IMAGE SECTION -->
+      <div class="col-xs-12">
+        <div class="text-center margin-30">
+          <%= image_tag "prod1.jpg", class:"img-presta" %>
+          <%= image_tag "prod2.jpg", class:"img-presta" %>
+          <%= image_tag "prod3.jpg", class:"img-presta" %>
+          <%= image_tag "prod4.jpg", class:"img-presta" %>
+        </div>
+        <div class="text-center margin-top-25">
+          <% link_to "/", class: "btn button" do %>
+            Retour à l'accueil
+          <% end %>
+        </div>
       </div>
     </div>
   </div>

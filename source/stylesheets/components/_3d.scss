@@ -1,9 +1,8 @@
 .card-3d {
   border: dashed #D7E2DB;
-  background: #f0fbff;
   border-radius: 5px;
   text-align: center;
-  padding: 0 30px;
+  padding: 30px 30px 10px 30px;
 }
 
 .card-3d h4 {
@@ -11,6 +10,7 @@
   font-size: 17px;
   padding-top: 20px;
   font-family: 'Inconsolata', Sans-serif;
+  font-weight: bolder;
 }
 
 .shadow-inset {
@@ -29,22 +29,7 @@
   padding-top: 20px;
 }
 
-.card-3d ul li:last-child {
-  padding-bottom:20px;
-}
-
 .card-3d .pastille {
-  background-color: #e0ece4;
   width: 50px;
-  height: 50px;
-  position: absolute;
-  border-radius: 50px;
-  top: -25px;
-  padding-top: 10px;
-  right: -8px;
-  letter-spacing: 1px;
-  font-size: 18px;
-  font-weight: bolder;
-  border: 3px solid #e0ece4;
-  color: #777777;
+  height: auto;
 }

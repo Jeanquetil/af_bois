@@ -1,9 +1,13 @@
 .button {
-  border: 3px dashed #e0ece4;
-  border-radius: 50px;
-  padding: 10px 20px;
-  background: #f0f8ff;
-  letter-spacing: 2px;
-  font-weight: 300;
-  color: $gray;
+  padding: 10px 30px;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  color: white;
+  background-color: #546A76;
+  border: solid 2px #546A76;
+  transition: all ease 0.3s;
+  &:hover {
+    color: #546A76;
+    background-color: white;
+  }
 }
