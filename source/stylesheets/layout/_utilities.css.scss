@@ -4,26 +4,6 @@
  * Feel free to change them and create your own
  * ------------------------------------- */
 
-// Paddings
-.marged {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-// Backgrounds
-.bg-text {
-  background: #4a4a4a;
-}
-.bg-email {
-  background: #aeaeae;
-}
-.bg-twitter {
-  background: #00a3e1;
-}
-.bg-facebook {
-  background: #3b5998;
-}
-
 .vertical-align-middle {
   vertical-align:middle;
 }
@@ -56,23 +36,34 @@ h1 {
 }
 
 h2 {
-  margin-top: 10px;
-  margin-bottom: 10px;
   letter-spacing: 2px;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 h3 {
   letter-spacing: 1px;
   font-weight: 300;
+  margin-top: 11px;
 }
 
 h4 {
   margin-top: 0px;
 }
 
+h5 {
+  font-weight: bold;
+  font-size: 18px;
+  color: #546A76;
+  letter-spacing: 1px;
+}
+
 p {
   line-height: 1;
+}
+
+.presta-desc {
+  color: #93939C;
+  letter-spacing: 1px;
 }
 
 .italic {
@@ -113,6 +104,10 @@ p {
   display: flex;
 }
 
+.space-between {
+  justify-content: space-between;
+}
+
 .vertical-center {
   align-items: center;
 }
@@ -120,4 +115,8 @@ p {
 .column {
   flex-direction: column;
   justify-content: center;
+}
+
+.width-15 {
+  width: 15%;
 }

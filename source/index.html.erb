@@ -13,157 +13,44 @@ title: A.f Bois
 <div class="wrapper light-gray">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12" id="">
-        <h2 class="text-center text-shadow-pink">Prestations</h2>
-        <hr class="horizontal-line gray">
-        <div class="col-xs-12 col-md-4">
-          <div class="card">
-            <div class="card-banner">
-            <% link_to "production.html" do %>
-              <h3>Production</h3>
-            </div>
-            <div class="slide-up">
-              <div class="box">
-
-                <div class="original">
-                  <ul class="list-unstyled">
-                    <li><p>Le matériau-bois a ses raisons ...</p></li>
-                  </ul>
-                </div>
-
-                <div class="overlay flexbox column">
-                  <p>+ d'infos</p>
-                </div>
-
-              </div>
-            </div>
-            <% end %>
+      <div class="frame vertical-center flexbox">
+        <div class="col-xs-12 col-sm-12 col-md-8 justified">
+          <h3>Tel un arbre …</h3>
+          <p>L'<strong>image de l'arbre</strong> est utilisée depuis longtemps pour représenter le <strong>fonctionnement du vivant</strong> : arbre généalogique, arbre de l'éternité, arbre de vie, …</p>
+          <p>Il y a de cela dans les technologies et les entreprises, qui évoluent et se transforment continuellement. Comme un arbre, elles doivent être nourries (les racines), se dresser dans la compétition du vivant (le tronc), et s’adapter au contexte (le houppier).</p>
+          <p>L’arbre est une façon - comme une autre - de décrire simplement toute entreprise :
+            <ul>
+              <li>Les <strong>racines</strong> sont le lieu du savoir, de la connaissance des bonnes pratiques : elles nourrissent le tronc et les branches.</li>
+              <li>Le <strong>tronc</strong> - par sa robustesse et sa rectitude relative - représente la structure et les équipements permanents de production : il croît en diamètre chaque année, selon le milieu ambiant.</li>
+              <li>Les <strong>branches</strong> représentent les marchés et les produits finis : elles peuvent tomber, végéter tel un broussin, fléchir sous le vent ou former un magnifique houppier.</li>
+            </ul>
+          </p>
+          <p>L’<strong>arbre A.f BOIS</strong> croît doucement depuis plus de 25 ans, le <strong>bois-matériau</strong> étant, depuis toujours, le fil conducteur de mon activité.</p>
+          <p>Frédéric Anquetil</p>
+          <p class="legend">Plus de 35 années d’expérience au service du bois, dont plus de 25 en tant que consultant indépendant.</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+          <%= image_tag "arbre.png", id:"arbre" %>
+        </div>
+      </div>
+      <h2 class="text-center">Prestations</h2>
+      <div class="flexbox text-center space-between">
+        <% data.prestations.each do |prestation, infos| %>
+          <div class="width-15">
+            <%= image_tag infos.picture, class:"customer" %>
+            <h5><%= infos.name %></h5>
+            <p class="presta-desc"><%= infos.description %></p>
           </div>
-        </div>
-        <div class="col-xs-12 col-md-4">
-          <div class="card">
-            <div class="card-banner">
-            <% link_to "developpement.html" do %>
-              <h3>Communication</h3>
-            </div>
-              <div class="slide-up">
-              <div class="box">
-
-                <div class="original">
-                  <ul class="list-unstyled">
-                    <li><p>Faire-savoir les savoir-faire ...</p></li>
-                  </ul>
-                </div>
-
-                <div class="overlay flexbox column">
-                  <p>+ d'infos</p>
-                </div>
-
-              </div>
-            </div>
-              <% end %>
-            </div>
-        </div>
-        <div class="col-xs-12 col-md-4">
-          <div class="card">
-            <div class="card-banner">
-            <% link_to "mix-marketing.html" do %>
-              <h3>Mix-Marketing</h3>
-            </div>
-              <div class="slide-up">
-              <div class="box">
-
-                <div class="original">
-                  <ul class="list-unstyled">
-                    <li><p>Penser les produits dans leurs marchés ...</p></li>
-                  </ul>
-                </div>
-
-                <div class="overlay flexbox column">
-                  <p>+ d'infos</p>
-                </div>
-
-              </div>
-            </div>
-              <% end %>
-            </div>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <div class="card">
-            <div class="card-banner">
-            <% link_to "communication.html" do %>
-              <h3>Développement</h3>
-            </div>
-              <div class="slide-up">
-              <div class="box">
-
-                <div class="original">
-                  <ul class="list-unstyled">
-                    <li><p>Les produits de demain sont à penser aujourd’hui ...</p></li>
-                  </ul>
-                </div>
-
-                <div class="overlay flexbox column">
-                  <p>+ d'infos</p>
-                </div>
-
-              </div>
-            </div>
-              <% end %>
-            </div>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <div class="card">
-            <div class="card-banner">
-            <% link_to "etudes.html" do %>
-              <h3>Etudes</h3>
-            </div>
-              <div class="slide-up">
-              <div class="box">
-
-                <div class="original">
-                  <ul class="list-unstyled">
-                    <li><p>Réfléchir globalement pour agir... finement</p></li>
-                  </ul>
-                </div>
-
-                <div class="overlay flexbox column">
-                  <p>+ d'infos</p>
-                </div>
-
-              </div>
-            </div>
-              <% end %>
-            </div>
-        </div>
+        <% end %>
       </div>
     </div>
   </div>
 </div>
 
-<div class="wrapper light-gray">
+<!-- QUOTING SECION -->
+<div class="wrapper asphalt">
   <div class="container">
     <div class="row">
-      <h2 class="text-center text-shadow-pink">A propos</h2>
-      <hr class="horizontal-line gray">
-      <div class="col-xs-12 col-md-8 justified" id="about">
-        <h3>Tel un arbre …</h3>
-        <p>L'<strong>image de l'arbre</strong> est utilisée depuis longtemps pour représenter le <strong>fonctionnement du vivant</strong> : arbre généalogique, arbre de l'éternité, arbre de vie, …</p>
-        <p>Il y a de cela dans les technologies et les entreprises, qui évoluent et se transforment continuellement. Comme un arbre, elles doivent être nourries (les racines), se dresser dans la compétition du vivant (le tronc), et s’adapter au contexte (le houppier).</p>
-        <p>L’arbre est une façon - comme une autre - de décrire simplement toute entreprise :
-          <ul>
-            <li>Les <strong>racines</strong> sont le lieu du savoir, de la connaissance des bonnes pratiques : elles nourrissent le tronc et les branches.</li>
-            <li>Le <strong>tronc</strong> - par sa robustesse et sa rectitude relative - représente la structure et les équipements permanents de production : il croît en diamètre chaque année, selon le milieu ambiant.</li>
-            <li>Les <strong>branches</strong> représentent les marchés et les produits finis : elles peuvent tomber, végéter tel un broussin, fléchir sous le vent ou former un magnifique houppier.</li>
-          </ul>
-        </p>
-        <p>L’<strong>arbre A.f BOIS</strong> croît doucement depuis plus de 25 ans, le <strong>bois-matériau</strong> étant, depuis toujours, le fil conducteur de mon activité.</p>
-        <p>Frédéric Anquetil</p>
-        <p class="legend">Plus de 35 années d’expérience au service du bois, dont plus de 25 en tant que consultant indépendant.</p>
-      </div>
-      <div class="col-xs-12 col-md-4 text-center">
-        <%= image_tag "arbre.png", id:"arbre" %>
-      </div>
       <div class="col-xs-12 col-md-10 col-md-offset-1">
         <div class="slider">
           <div class="slide_viewer">
@@ -195,12 +82,26 @@ title: A.f Bois
   </div>
 </div>
 
+<div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12" id="customers">
+      <h2 class="text-center">Clients</h2>
+        <% data.customers.each do |customer, infos| %>
+          <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+            <%= image_tag infos.picture, class:"customer" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="wrapper green color-white">
   <div class="container">
     <div class="row">
       <div class="col-xs-12" id="work">
-        <h2 class="text-center text-shadow-gray">Brindilles</h2>
-        <hr class="horizontal-line white">
+        <h2 class="text-center">Brindilles</h2>
           <% data.works.each do |work, infos| %>
             <div class="col-xs-12 col-md-6 text-center">
               <a data-toggle="modal" data-target="#<%= work %>" class="works">
@@ -230,28 +131,11 @@ title: A.f Bois
   </div>
 </div>
 
-<div class="wrapper">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12" id="customers">
-      <h2 class="text-center text-shadow-pink">Clients</h2>
-      <hr class="horizontal-line gray">
-        <% data.customers.each do |customer, infos| %>
-          <div class="col-xs-12 col-sm-6 col-md-4 text-center">
-            <%= image_tag infos.picture, class:"customer" %>
-          </div>
-        <% end %>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 <div class="wrapper light-gray">
   <div class="container">
     <div class="row">
       <div class="col-xs-12" id="contact">
-        <h2 class="text-center text-shadow-pink">Contact</h2>
+        <h2 class="text-center">Contact</h2>
         <hr class="horizontal-line gray">
         <div class="col-xs-12 col-md-4">
           <div class="contact-card">

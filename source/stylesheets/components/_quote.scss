@@ -1,6 +1,7 @@
 .slider {
-  margin: 40px 0 25px 0;
+  margin: 40px 0px 0px 0px;
   max-width: 940px;
+  box-shadow: 0px -10px 15px 0px rgba(0,0,0,0.2);
 }
 
 .slide_viewer {
@@ -19,10 +20,9 @@
   display: none;
   position: absolute;
   background-color: white;
-  box-shadow: 4px 0px 0px 2px #268f63;
+  box-shadow: 0px 2px 0px 6px $green;
   text-align: center;
   padding: 3rem 2rem;
-  margin: 20px 10px;
   min-height:140px;
   line-height:1.6;
   width:100%;
@@ -48,7 +48,7 @@
 }
 
 a.slide_btn {
-  color: #474544;
+  color: #a3afb5;
   font-size: 30px;
   margin: 0 0.2em;
   -webkit-transition: all 0.4s ease-in-out;
@@ -59,7 +59,7 @@ a.slide_btn {
 }
 
 .slide_btn.active, .slide_btn:hover {
-  color: #268F63;
+  color: $green;
   cursor: pointer;
   text-decoration:none;
 }
