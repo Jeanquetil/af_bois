@@ -11,3 +11,26 @@
   padding: 30px 50px;
   border-radius: 5px;
 }
+
+
+@media screen and (max-width: 768px) {
+  .icon-presta {
+    display: none;
+  }
+
+  .prestations .content {
+    padding: 30px;
+  }
+
+  .prestations .content p {
+    font-size: 12px;
+  }
+
+  .card-3d p {
+    font-size: 12px;
+  }
+
+  .margin-30 {
+    margin: 20px;
+  }
+}
