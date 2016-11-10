@@ -4,49 +4,73 @@ title: A.f Bois - Mix-Marketing
 
 <div class="height"></div>
 
-<div class="wrapper linear-gray prestations">
+<div class="wrapper prestations">
   <div class="container">
-    <h2 class="text-center">Mix-Marketing</h2>
-    <div class="row margin-top-25">
-      <div class="flexbox vertical-center">
-        <div class="col-xs-12 col-md-7">
-          <h4><span class="shadow-inset">Conseil</span></h4>
-          <ul class="list-unstyled">
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Etude de marché (quantitative ou qualitative)</p></li>
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Analyse de positionnement prix/produits/canaux, mapping</p></li>
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> La fenêtre en bois dans le Bassin du Congo</p></li>
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> La segmentation des marchés</p></li>
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Complémentarité bois tropicaux et bois métropolitains (issus de la gestion durable des forêts)</p></li>
-          </ul>
-          <h4><span class="shadow-inset">Formation</span></h4>
-          <ul class="list-unstyled">
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Le mix-marketing des nouveautés</p></li>
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Cycle de vie commercial des collections</p></li>
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Initiation à l'analyse de la valeur</p></li>
-          </ul>
-        </div>
-        <div class="col-xs-12 col-md-5">
-          <div class="card-3d">
-            <div class="pastille">3D</div>
-            <h4><span class="shadow-inset-pink">Démarche de Développement Durable</span></h4>
-            <ul class="list-unstyled">
-              <li><i class="fa fa-check" aria-hidden="true"></i> Définition de méthode de suivi des chaînes de contrôle de bois écocertifiés</li>
-              <li><i class="fa fa-check" aria-hidden="true"></i> Choix d'essences en gestion soutenable</li>
-              <li><i class="fa fa-check" aria-hidden="true"></i> Veille concurrentielle des stratégies environnementales</li>
-            </ul>
+    <h2 class="text-center"><span class="shadow-inset-pink">Mix-Marketing</span></h2>
+    <div class="row">
+
+      <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <div class="flexbox space-around vertical-center margin-30">
+          <%= image_tag "search.png", class:"icon-presta" %>
+          <div class="content">
+            <h4><span class="shadow-inset">Conseil</span></h4>
+            <p>Etude de marché (quantitative ou qualitative)</p>
+            <p>Analyse de positionnement prix/produits/canaux, mapping</p>
+            <p>La fenêtre en bois dans le Bassin du Congo</p>
+            <p>La segmentation des marchés</p>
+            <p>Complémentarité bois tropicaux et bois métropolitains (issus de la gestion durable des forêts)</p>
           </div>
         </div>
       </div>
-      <div class="text-center margin-top-25">
-        <%= image_tag "mark1.png", class:"img-presta" %>
-        <%= image_tag "mark2.jpg", class:"img-presta" %>
-        <%= image_tag "mark3.png", class:"img-presta" %>
-        <%= image_tag "mark4.png", class:"img-presta" %>
+
+      <div class="col-xs-12 col-md-9 col-md-offset-1">
+        <div class="flexbox space-around vertical-center margin-30">
+          <div class="content">
+            <h4><span class="shadow-inset">Formation</span></h4>
+            <p>Le mix-marketing des nouveautés</p>
+            <p>Cycle de vie commercial des collections</p>
+            <p>Initiation à l'analyse de la valeur</p>
+          </div>
+          <%= image_tag "worker.png", class:"icon-presta" %>
+        </div>
       </div>
-      <div class="text-center">
-        <% link_to "/", class: "btn button" do %>
-          <i class="fa fa-home" aria-hidden="true"></i> Retour à l'accueil
-        <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper light-gray">
+  <div class="container">
+    <div class="row">
+      <!-- 3D SECTION -->
+      <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <div class="card-3d margin-top-25">
+          <%= image_tag "earth.png", class:"pastille" %>
+          <h4><span class="shadow-inset-pink">Démarche de Développement Durable</span></h4>
+          <p><i class="fa fa-check" aria-hidden="true"></i> Définition de méthode de suivi des chaînes de contrôle de bois écocertifiés</p>
+          <p><i class="fa fa-check" aria-hidden="true"></i> Choix d'essences en gestion soutenable</p>
+          <p><i class="fa fa-check" aria-hidden="true"></i> Veille concurrentielle des stratégies environnementales</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <!-- IMAGE SECTION -->
+      <div class="col-xs-12">
+        <div class="text-center margin-30">
+          <%= image_tag "mark1.png", class:"img-presta" %>
+          <%= image_tag "mark2.jpg", class:"img-presta" %>
+          <%= image_tag "mark3.png", class:"img-presta" %>
+          <%= image_tag "mark4.png", class:"img-presta" %>
+        </div>
+        <div class="text-center margin-top-25">
+          <% link_to "/", class: "btn button" do %>
+            Retour à l'accueil
+          <% end %>
+        </div>
       </div>
     </div>
   </div>

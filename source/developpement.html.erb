@@ -4,54 +4,78 @@ title: A.f Bois - Développement
 
 <div class="height"></div>
 
-<div class="wrapper linear-gray prestations">
+<div class="wrapper prestations">
   <div class="container">
-    <h2 class="text-center">Développement</h2>
-    <div class="row margin-top-25">
-      <div class="flexbox vertical-center">
-        <div class="col-xs-12 col-md-7">
-          <h4><span class="shadow-inset">Conseil</span></h4>
-          <ul class="list-unstyled">
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Choix d'une essence de bois en fonction de son emploi</p></li>
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Revue de conception de fabrication en bois ou mixte</p></li>
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Suivi de fabrication de prototypes</p></li>
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Elaboration de plan d'expériences et de qualification</p></li>
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Analyse de la valeur pour reconcevoir les achats et/ou les produits</p></li>
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Audit "métier" de reprise d'entreprise</p></li>
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Veille réglementaire et normative (bois-matériau, mise en oeuvre, etc)</p></li>
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Recherche de solution techniques innovantes</p></li>
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Animation de groupe de travail de gestion du changement</p></li>
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Business plan d'unité de production</p></li>
-          </ul>
-          <h4><span class="shadow-inset">Formation</span></h4>
-          <ul class="list-unstyled">
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> L'analyse de la valeur</p></li>
-            <li><p><i class="fa fa-circle" aria-hidden="true"></i> Règles de conception des menuiseries extérieures</p></li>
-          </ul>
-        </div>
-        <div class="col-xs-12 col-md-5">
-          <div class="card-3d">
-            <div class="pastille">3D</div>
-            <h4><span class="shadow-inset-pink">Démarche de Développement Durable</span></h4>
-            <ul class="list-unstyled">
-              <li><i class="fa fa-check" aria-hidden="true"></i> Amélioration de l'isolation thermique</li>
-              <li><i class="fa fa-check" aria-hidden="true"></i> "5R" pour économiser la matière première</li>
-              <li><i class="fa fa-check" aria-hidden="true"></i> Recherche de débouchés pour les sous-produits en bois</li>
-              <li><i class="fa fa-check" aria-hidden="true"></i> Classes d'emplois / durabilité naturelle des essences</li>
-            </ul>
+    <h2 class="text-center"><span class="shadow-inset-pink">Développement</span></h2>
+    <div class="row">
+
+      <div class="col-xs-12 col-md-9 col-md-offset-2">
+        <div class="flexbox space-around vertical-center margin-30">
+          <%= image_tag "search.png", class:"icon-presta" %>
+          <div class="content">
+            <h4><span class="shadow-inset">Conseil</span></h4>
+            <p>Choix d'une essence de bois en fonction de son emploi</p>
+            <p>Revue de conception de fabrication en bois ou mixte</p>
+            <p>Suivi de fabrication de prototypes</p>
+            <p>Elaboration de plan d'expériences et de qualification</p>
+            <p>Analyse de la valeur pour reconcevoir les achats et/ou les produits</p>
+            <p>Audit "métier" de reprise d'entreprise</p>
+            <p>Veille réglementaire et normative (bois-matériau, mise en oeuvre, etc)</p>
+            <p>Recherche de solution techniques innovantes</p>
+            <p>Animation de groupe de travail de gestion du changement</p>
+            <p>Business plan d'unité de production</p>
           </div>
         </div>
       </div>
-      <div class="text-center margin-top-25">
-        <%= image_tag "deve1.jpg", class:"img-presta" %>
-        <%= image_tag "deve2.jpg", class:"img-presta" %>
-        <%= image_tag "deve3.jpg", class:"img-presta" %>
-        <%= image_tag "deve4.jpg", class:"img-presta" %>
+
+      <div class="col-xs-12 col-md-9 col-md-offset-1">
+        <div class="flexbox space-around vertical-center margin-30">
+          <div class="content">
+            <h4><span class="shadow-inset">Formation</span></h4>
+            <p>L'analyse de la valeur</p>
+            <p>Règles de conception des menuiseries extérieures</p>
+          </div>
+          <%= image_tag "worker.png", class:"icon-presta" %>
+        </div>
       </div>
-      <div class="text-center">
-        <% link_to "/", class: "btn button" do %>
-          <i class="fa fa-home" aria-hidden="true"></i> Retour à l'accueil
-        <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper light-gray">
+  <div class="container">
+    <div class="row">
+      <!-- 3D SECTION -->
+      <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <div class="card-3d margin-top-25">
+          <%= image_tag "earth.png", class:"pastille" %>
+          <h4><span class="shadow-inset-pink">Démarche de Développement Durable</span></h4>
+          <p><i class="fa fa-check" aria-hidden="true"></i> Amélioration de l'isolation thermique</p>
+          <p><i class="fa fa-check" aria-hidden="true"></i> "5R" pour économiser la matière première</p>
+          <p><i class="fa fa-check" aria-hidden="true"></i> Recherche de débouchés pour les sous-produits en bois</p>
+          <p><i class="fa fa-check" aria-hidden="true"></i> Classes d'emplois / durabilité naturelle des essences</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <!-- IMAGE SECTION -->
+      <div class="col-xs-12">
+        <div class="text-center margin-30">
+          <%= image_tag "deve1.jpg", class:"img-presta" %>
+          <%= image_tag "deve2.jpg", class:"img-presta" %>
+          <%= image_tag "deve3.jpg", class:"img-presta" %>
+          <%= image_tag "deve4.jpg", class:"img-presta" %>
+        </div>
+        <div class="text-center margin-top-25">
+          <% link_to "/", class: "btn button" do %>
+            Retour à l'accueil
+          <% end %>
+        </div>
       </div>
     </div>
   </div>
