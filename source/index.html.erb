@@ -2,7 +2,7 @@
 title: A.f Bois
 ---
 
-<div class="banner" id="home" style="background-image: linear-gradient(-225deg, rgba(255, 196, 146, 0.3) 20%, rgba(36, 43, 47, 0.4) 70%), url('../images/banner.jpeg');">
+<div class="banner" id="home" style="background-image: linear-gradient(-225deg, rgba(255, 196, 146, 0.3) 20%, rgba(36, 43, 47, 0.4) 70%), url('../images/num.jpg');">
   <div class="height"></div>
   <div class="banner-content">
     <h1>A.<span class="italic light font-size-50">f</span>&nbsp Bois</h1>
@@ -37,9 +37,11 @@ title: A.f Bois
       <div class="flexbox text-center space-between" id="prestations">
         <% data.prestations.each do |prestation, infos| %>
           <div class="width-15">
-            <%= image_tag infos.picture, class:"customer" %>
-            <h5><%= infos.name %></h5>
-            <p class="presta-desc"><%= infos.description %></p>
+            <% link_to "#{infos.url}" do %>
+              <%= image_tag infos.picture, class:"customer" %>
+              <h5><%= infos.name %></h5>
+              <p class="presta-desc"><%= infos.description %></p>
+            <% end %>
           </div>
         <% end %>
       </div>

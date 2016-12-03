@@ -2,19 +2,24 @@ production:
   name: Production
   picture: prod.png
   description: Le matériau-bois a ses raisons
+  url: production.html
 developpement:
   name: Développement
   picture: dev.png
   description: Faire-savoir les savoir-faire
+  url: developpement.html
 mix-marketing:
   name: Mix-Marketing
   picture: market.png
   description: Penser les produits dans leurs marchés
+  url: mix-marketing.html
 communication:
   name: Communication
   picture: com.png
   description: Penser aujourd'hui les produits de demain
+  url: communication.html
 etudes:
   name: Etudes
   picture: etudes.png
   description: Réfléchir globalement pour agir...finement
+  url: etudes.html
