@@ -45,6 +45,9 @@ title: A.f Bois
           </div>
         <% end %>
       </div>
+      <div class="text-center locations">
+        <%= image_tag "locations.png" %>
+      </div>
     </div>
   </div>
 </div>
@@ -88,7 +91,7 @@ title: A.f Bois
   <div class="container">
     <div class="row">
       <div class="col-xs-12" id="customers">
-      <h2 class="text-center">Clients</h2>
+      <h2 class="text-center">Clients & Partenaires</h2>
         <% data.customers.each do |customer, infos| %>
           <div class="col-xs-6 col-sm-4 col-md-4 text-center">
             <%= image_tag infos.picture, class:"customer" %>
