@@ -45,12 +45,11 @@ title: A.f Bois
           </div>
         <% end %>
       </div>
-      <div class="text-center locations">
-        <%= image_tag "locations.png" %>
-      </div>
     </div>
   </div>
 </div>
+
+<div id="map" style="width: 100%; height: 400px;"></div>
 
 <!-- QUOTING SECION -->
 <div class="wrapper asphalt">
@@ -284,6 +283,17 @@ $( document ).ready(function() {
     });
 
     advance();
+  });
+
+  var paris = {lat: 48.866667, lng: 2.333};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 3,
+    center: paris,
+    scrollwheel: false
+  });
+  var marker = new google.maps.Marker({
+    position: paris,
+    map: map
   });
 });
 </script>
