@@ -58,6 +58,7 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
+  config[:host] = "https://www.afbois.fr"
   # For example, change the Compass output style for deployment
   # activate :minify_css
 
@@ -83,7 +84,6 @@ activate :deploy do |deploy|
   deploy.method = :git
   deploy.build_before = true
   deploy.remote = 'gh-pages'
-  deploy.branch = 'master'
 
   # Optional Settings
   # deploy.remote = 'custom-remote' # remote name or git url, default: origin
